@@ -45,6 +45,7 @@ var saveTasks = function() {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 };
 
+// delegated "p" click
 $(".list-group").on("click", "p", function() {
     var text = $(this)
       .text()
